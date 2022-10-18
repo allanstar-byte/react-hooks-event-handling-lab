@@ -6,12 +6,13 @@ import React from 'react'
 // }
 
 function EyesOnMe() {
-  function handleSubmit(event) {
-    event.preventDefault()
-    console.log('Good!')
+  function handleFocus(e) {
+    e.preventDefault();
+    console.log('Good !');
   }
-
-  return <button onClick={handleSubmit}> Eyes on Me </button>
+  return(
+    <button onFocus={handleFocus}>Eyes On Me</button>
+  )
 }
 
 export default EyesOnMe
